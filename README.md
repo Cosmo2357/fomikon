@@ -5,7 +5,10 @@
 </p>
 
 # Authors
+
 - Yuhki Hayashi
+
+<a href="/">Apache 2.0 License.</a>
 
 ## Install
 
