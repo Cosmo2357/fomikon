@@ -1,0 +1,26 @@
+{
+  "name": "fomikon",
+  "version": "1.0.0",
+  "description": "Make form validation easy and simple",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cosmo2357/fomikon.git"
+  },
+  "keywords": [
+    "Form",
+    "React",
+    "Validation",
+    "Next",
+    "JavaScript"
+  ],
+  "author": "Yuhki Hayashi",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/Cosmo2357/fomikon/issues"
+  },
+  "homepage": "https://github.com/Cosmo2357/fomikon#readme"
+}
