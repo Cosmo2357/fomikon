@@ -4,6 +4,9 @@
 <strong>make your form validation easy and flexible with FOMIKON 宇宙</
 </p>
 
+# Authors
+- Yuhki Hayashi
+
 ## Install
 
 ```bash
