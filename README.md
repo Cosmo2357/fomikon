@@ -45,25 +45,31 @@ $ npm i fomikon
 import Fomikon from "fomikon";
 ```
 
-# Functions
-
 ```javascript
 const fomikon = new Fomikon();
 ```
 
+## Functions
+
 ```javascript
-fomikon.atOnFocus();
+atOnFocus();
 ```
 
 ```javascript
-fomikon.atOnBlur();
+atOnBlur();
 ```
 
 ```javascript
-fomikon.atUseEffect();
+atUseEffect();
 ```
 
 ```javascript
+atButtonDisable();
+```
+
+```javascript
+// You can call function like this 😉
+const fomikon = new Fomikon();
 fomikon.atButtonDisable();
 ```
 
@@ -84,7 +90,7 @@ export default function FormExample() {
   const fomikon = new Fomikon();
 
   //You can specify the regex for the each validation here
-  //Regex is very powerful tool. So I recommend you to learn basic if you don't know anything. 👴
+  //Regex is very powerful tool. So I recommend you to learn basic if you don't know anything 💪
   const mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   // Create array data and set it in each functions FOMIKON offers.
@@ -96,7 +102,7 @@ export default function FormExample() {
     { require: true, regex: mailRegex },
   ];
 
-// Maybe you should use memo or useMemo or something like that if you think about performance.
+// Maybe you should use memo or useMemo or something like that if you think about performance. 🐢
 
   useEffect{()=> {
     fomikon.atUseEffect(fomikonMail)
