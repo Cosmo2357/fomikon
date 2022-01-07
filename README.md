@@ -45,26 +45,26 @@ $ npm i fomikon
 import Fomikon from "fomikon";
 ```
 
+# Functions
+
 ```javascript
 const fomikon = new Fomikon();
 ```
 
-# 4 Main useful Functions
-
 ```javascript
-atOnFocus();
+fomikon.atOnFocus();
 ```
 
 ```javascript
-atOnBlur();
+fomikon.atOnBlur();
 ```
 
 ```javascript
-atUseEffect();
+fomikon.atUseEffect();
 ```
 
 ```javascript
-atButtonDisable();
+fomikon.atButtonDisable();
 ```
 
 ## Example
@@ -99,7 +99,7 @@ export default function FormExample() {
 // Maybe you should use memo or useMemo or something like that if you think about performance.
 
   useEffect{()=> {
-    atUseEffect(fomikonMail)
+    fomikon.atUseEffect(fomikonMail)
   },[ email,
     setEmail,
     emailValidation,
@@ -115,14 +115,14 @@ export default function FormExample() {
         type="email"
         placeholder="email"
         onFocus={() => {
-          atOnFocus(fomikonMail);
+          fomikon.atOnFocus(fomikonMail);
         }}
         onBlur={() => {
-          atOnBlur(fomikonMail);
+          fomikon.atOnBlur(fomikonMail);
         }}
       />
       <button onClick={submitHandler}　disable={()=> {
-        atButtonDisable(email)
+        fomikon.atButtonDisable(email)
       }} >SUBMIT</button>
     </div>
   );
