@@ -1,14 +1,26 @@
-# 👾FOMIKON / Form validation library for React
-
 <p align="center">
-<strong>😊Feel to cantact me if you wanna join the project!</
+<img src="https://user-images.githubusercontent.com/37522195/148507084-8eb86ea3-ea44-4e1b-9394-47b4d5971067.png"/>
+
+<strong>😊Feel to contact me if you wanna join the project!<strong>
+
 </p>
 
-# Fomikon
+# 👾FOMIKON👾 Form validation library for React
 
 Fomikon makes your stressful form validation work easy.
-It returns the number the number depending on the status during form validation.  
-For example
+It returns the number depending on the status during form validation.
+
+[Apache 2.0 License.](https://github.com/cosmo2357/fomikon/LICENSE)
+
+# Author
+
+- Yuhki Hayashi
+
+# Contributors
+
+- Who wanna be listed here?😏 Feel free to send me a message!😊
+
+# How it works
 
 - user clicked the input => 2
 - user type wrong email address and move to the next input => 3
@@ -19,7 +31,23 @@ number changed depending on if it's the input field is required to fill and if i
 And there is a function that checks if all input fields are validated.
 so You can use This function to activate form submit button.
 
-## 4 Main Functions
+# Usage
+
+## Installation
+
+```bash
+$ npm i fomikon
+```
+
+```javascript
+import Fomikon from "fomikon";
+```
+
+```javascript
+const fomikon = new Fomikon();
+```
+
+# 4 Main useful Functions
 
 ```javascript
 atOnFocus();
@@ -35,32 +63,6 @@ atUseEffect();
 
 ```javascript
 atButtonDisable();
-```
-
-# Author
-
-- Yuhki Hayashi
-
-[Apache 2.0 License.](https://github.com/cosmo2357/fomikon/LICENSE)
-
-# Contributors
-
-###
-
-## Install
-
-```bash
-$ npm i fomikon
-```
-
-## How to Use
-
-```javascript
-import Fomikon from "fomikon";
-```
-
-```javascript
-const fomikon = new Fomikon();
 ```
 
 ## Example
@@ -100,4 +102,4 @@ Disable esLint
 // eslint-disable-next-line
 ```
 
-👷Sorry... I'm still working on it 👷
+👷Work in progress 👷
