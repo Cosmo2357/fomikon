@@ -90,7 +90,8 @@ export default function FormExample() {
   const fomikon = new Fomikon();
 
   //You can specify the regex for the each validation here
-  //Regex is very powerful tool. So I recommend you to learn basic if you don't know anything 💪
+  //Regex is very powerful tool.
+  //So I recommend you to learn basic if you don't know anything 💪
   const mailRegex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
 
   // Create array data and set it in each functions FOMIKON offers.
@@ -120,15 +121,20 @@ export default function FormExample() {
       <input
         type="email"
         placeholder="email"
+        value={email}
+        onChange={(e) => {
+          setEmail(e.target.value);
+        }}
         onFocus={() => {
-          fomikon.atOnFocus(fomikonMail);
+          fomikon.atOnFocus(...fomikonMail);
         }}
         onBlur={() => {
-          fomikon.atOnBlur(fomikonMail);
+          fomikon.atOnBlur(...fomikonMail);
         }}
       />
-      <button onClick={submitHandler}　disable={()=> {
-        fomikon.atButtonDisable(email)
+      <button onClick={submitHandler}　
+      disable={()=> {
+        fomikon.atButtonDisable(emailValidation)
       }} >SUBMIT</button>
     </div>
   );
