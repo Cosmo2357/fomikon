@@ -1,6 +1,6 @@
 {
   "name": "fomikon",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Make form validation easy and simple",
   "main": "index.js",
   "scripts": {
