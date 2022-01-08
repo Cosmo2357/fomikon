@@ -103,8 +103,10 @@ export default function FormExample() {
     { require: true, regex: mailRegex },
   ];
 
-// Maybe you should use memo or useMemo or something like that if you think about performance. 🐢
+  // This is for atButtonDisable() function
+  const buttonDisable = [emailValidation]
 
+// Maybe you should use memo or useMemo or something like that if you care about performance. 🐢
   useEffect{()=> {
     fomikon.atUseEffect(fomikonMail)
   },[ email,
@@ -116,6 +118,8 @@ export default function FormExample() {
     const data = { email: email };
     console.log(data);
   };
+
+
   return (
     <div>
       <input
@@ -134,7 +138,7 @@ export default function FormExample() {
       />
       <button onClick={submitHandler}　
       disable={()=> {
-        fomikon.atButtonDisable(emailValidation)
+        fomikon.atButtonDisable(buttonDisable)
       }} >SUBMIT</button>
     </div>
   );

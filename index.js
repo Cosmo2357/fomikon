@@ -66,8 +66,11 @@ class Fomikon {
     }
   };
 
-  atButtonDisable = (a) => {
-    if (a === 0) {
+  atButtonDisable = (ValidationResult) => {
+    const result = ValidationResult.reduce(function (a, b) {
+      return a + b;
+    });
+    if (result === 0) {
       return false;
     } else {
       return true;
